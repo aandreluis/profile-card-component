@@ -35,7 +35,7 @@ Esse desafio se torna interessante por nos fazer trabalhar com elementos "positi
 
 ...
 
-- Solution: []()
-- Live Site: []()
+- Solution: [https://www.frontendmentor.io/solutions/profile-card-component-html-css-RvT0o3n22r](https://www.frontendmentor.io/solutions/profile-card-component-html-css-RvT0o3n22r)
+- Live Site: [https://profile-card-component-aandreluis.netlify.app/](https://profile-card-component-aandreluis.netlify.app/)
 
 ---
