@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  /* Primary */
+  --dark-cyan: #19a2ae;
+  --very-dark-desaturated-blue: #2d3248;
+  --dark-grayish-blue: #6a6f81;
+
+  /* Neutral */
+  --dark-gray: #969696;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  color: var(--very-dark-desaturated-blue);
+}
+
+body {
+  background-color: var(--dark-cyan);
+  background-image: url("../../public/bg-pattern-top.svg"), url("../../public/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 53vw bottom 40vh, left 53vw top 40vh;
+  background-size: 120vh;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#card {
+  width: 350px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: -14px 9px 18px -7px rgba(45, 50, 72, 0.2);
+}
+
+#card img {
+  max-width: 100%;
+  border-radius: 16px 16px 0 0;
+}
+
+#card .user {
+  border-radius: 50%;
+  border: solid 6px #ffffff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#card .user img {
+  max-width: 40%;
+  border-radius: 50%;
+  border: solid 6px #ffffff;
+  position: absolute;
+}
+
+#card .user-info {
+  margin-top: 40px;
+  padding: 24px;
+  text-align: center;
+}
+
+#card .user-info span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#card .user-info span p {
+  margin-left: 8px;
+  color: var(--dark-gray);
+}
+
+#card .user-info>p {
+  color: var(--dark-gray);
+  font-size: 15px;
+  margin-top: 8px;
+}
+
+#card .user-stats {
+  border-top: solid 1px rgba(150, 150, 150, 0.3);
+  padding: 24px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+#card .user-stats span p {
+  font-size: 12px;
+  color: var(--dark-grayish-blue);
+  margin-top: 5px;
+}
+
+.attribution {
+  margin-top: 10px;
+  font-size: 11px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.attribution a {
+  font-size: 11px;
+  color: #ffffff;
+}
+
+/* Mobile */
+@media (max-width: 375px) {
+  #card {
+    width: 90%;
+  }
+}
